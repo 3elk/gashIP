@@ -19,8 +19,8 @@ cls
 call :banner
 echo.           
 echo       ________________________________________Hello, welcome to [32mgashIP[0m._______________________________________
-echo      │ Enter the name of the TXT file that withholds the desired IPs with its extension within the directory. │
-echo      │   If said TXT is not within this directory, make sure write the full complete path of the TXT file.    │
+echo      │ Enter the name of the TXT file with the desired IPs with its extension in the directory.               │
+echo      │   If said TXT is not in this directory, make sure write the full complete path of the TXT file.        │
 echo      │__________________________If assistance is needed, type in the command, "HELP"._________________________│
 set /p ipFile=
 
@@ -30,10 +30,10 @@ if /i "%ipFile%"=="HELP" (
     echo. 
 	echo     HELP - How to use [32mgashIP[0m:
     echo ---------------------------------------------------------------------------------------
-    echo 1 - Type the name of the TXT holding the IP addresses.                                 │
-    echo 2 - Write the command "LOG" to see your archived past IP information.                  │
+    echo 1 - Type the name of the TXT with the IP addresses.                                    │
+    echo 2 - Write the command "LOG" to see your          past IP information.                  │
     echo 3 - Type the command "EXIT" to leave [32mgashIP[0m.                                           │
-    echo 4 - gashIP will gather the geolocation information for each IP given to it.            │
+    echo 4 - [32mgashIP[0m will gather the geolocation information for each IP entered.                │
     echo 5 - The information of the IPs when finished will be located in the following folders: │
     echo    - Raw JSON responses: output\json_results                                           │   
     echo    - Extracted geolocation information: output\geolocation_results                     │
@@ -132,7 +132,7 @@ echo [32m                      __    ________ [0m
 echo [32m    ____ _____ ______/ /_  /  _/ __ \[0m
 echo [32m   / __ `/ __ `/ ___/ __ \ / // /_/ /[0m
 echo [32m  / /_/ / /_/ (__  ) / / // // ____/ [0m
-echo [32m \__, /\__,_/____/_/ /_/___/_/   (_) [0m
-echo [32m/____/                               [0m
+echo [32m  \__, /\__,_/____/_/ /_/___/_/   (_) [0m
+echo [32m /____/                              [0m
 echo.
 echo.
