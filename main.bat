@@ -31,7 +31,7 @@ if /i "%ipFile%"=="HELP" (
 	echo     HELP - How to use [32mgashIP[0m:
     echo ---------------------------------------------------------------------------------------
     echo 1 - Type the name of the TXT with the IP addresses.                                    │
-    echo 2 - Write the command "LOG" to see your          past IP information.                  │
+    echo 2 - Write the command "LOG" to see information on your previously scanned IPs          │
     echo 3 - Type the command "EXIT" to leave [32mgashIP[0m.                                           │
     echo 4 - [32mgashIP[0m will gather the geolocation information for each IP entered.                │
     echo 5 - The information of the IPs when finished will be located in the following folders: │
