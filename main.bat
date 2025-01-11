@@ -118,7 +118,7 @@ for /f "tokens=*" %%i in (%ipFile%) do (
     echo -------------------------- >> "output\geolocation_results\!ip!_geo.txt"
 )
 
-echo Processing complete. Thank you for using gashIP. Results saved in the following folders:
+echo Processing complete. Thank you for using gashIP. The information is saved in the following folders:
 echo - Raw JSON responses: output\json_results
 echo - Extracted geolocation information: output\geolocation_results
 pause
