@@ -22,6 +22,7 @@ echo       ________________________________________Hello, welcome to [32mgashIP
 echo      │ Enter the name of the TXT file with the desired IPs with its extension in the directory.               │
 echo      │   If said TXT is not in this directory, make sure write the full complete path of the TXT file.        │
 echo      │__________________________If assistance is needed, type in the command, "HELP"._________________________│
+echo                                 │______________________by elk :3____________________│
 set /p ipFile=
 
 :: Handle HELP command
@@ -29,16 +30,17 @@ if /i "%ipFile%"=="HELP" (
     cls
     echo. 
 	echo     HELP - How to use [32mgashIP[0m:
-    echo ________________________________________________________________________________________
+    echo  _______________________________________________________________________________________
     echo │1 -  Type the name of the TXT file with the IPs.                                       │
     echo │2 - [32mgashIP[0m will gather the geolocation information for each IP entered.                │
     echo │3 - The information of the IPs when finished will be located in the following folders: │
     echo │  - Raw JSON responses: output\json_results                                            │   
     echo │  - Extracted geolocation information: output\geolocation_results                      │
     echo │______________________________________COMMANDS_________________________________________│
-    echo │1 - Write the command "LOG" to see information on your previously scanned IPs          │
-    echo │3 - Type the command "EXIT" to leave [32mgashIP[0m.                                           │
+    echo │1 - Write the command "LOG" to see information on your previously scanned IPs.         │
     echo │2 - Type the command "HELP" to have a guide on how to use [32mgashIP[0m.                      │   
+	echo │3 - Type the command "MEDIA" to see my social media profiles.                          │
+    echo │4 - Type the command "EXIT" to leave [32mgashIP[0m.                                           │
     echo │_______________________________________________________________________________________│
     pause
     goto INPUT
@@ -48,14 +50,14 @@ if /i "%ipFile%"=="HELP" (
 if /i "%ipFile%"=="LOG" (
     cls
     echo Scanned IP Logs:
-    echo --------------------------
+    echo ______________________________
     if not exist "output\geolocation_results" (
         echo No logs found. Please scan some IPs first.
     ) else (
         for /r "output\geolocation_results" %%f in (*_geo.txt) do (
             echo Contents of %%~nxf:
             type "%%f"
-            echo --------------------------
+            echo ______________________________
         )
     )
     pause
@@ -64,10 +66,27 @@ if /i "%ipFile%"=="LOG" (
 
 :: Handle EXIT command
 if /i "%ipFile%"=="exit" (
-    echo Exiting the script. Goodbye!
+    echo Exiting the gashIP. See you later!
     exit /b
 )
 
+:: Handle MEDIA command
+if /i "%ipFile%"=="MEDIA" (
+	cls
+	echo.
+	echo.
+	echo  Social-Media Profiles:
+	echo  ________________________________
+	echo │ Biolink: Guns.lol/_            │
+	echo │ Discord: @2elk                 │
+	echo │ Roblox: @Onal                  │
+	echo │ rest of my stuff is in my guns │
+	echo │ join /xzc and /diddy btw       │
+	echo │________________________________│
+	pause
+	goto INPUT
+)
+	
 :: Check if the file exists
 if not exist "%ipFile%" (
     echo The file "%ipFile%" does not exist. Please provide a valid file with its extension or specify its full path.
