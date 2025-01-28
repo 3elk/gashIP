@@ -1,5 +1,5 @@
-cls
 @echo off
+cls
 
 :START
 cls
@@ -17,31 +17,37 @@ setlocal EnableDelayedExpansion
 :: Prompt for the file containing IP addresses with more detailed instruction
 cls
 call :banner
-echo.           
-echo       ________________________________________Hello, welcome to [32mgashIP[0m._______________________________________
-echo      │ Enter the name of the TXT file with the desired IPs with its extension in the directory.               │
-echo      │   If said TXT is not in this directory, make sure write the full complete path of the TXT file.        │
-echo      │__________________________If assistance is needed, type in the command, "HELP"._________________________│
-echo                                 │______________________by elk :3____________________│
-set /p ipFile=
+echo.         
+echo                                                ┌──────────────────────────┐ 
+echo      ┌─────────────────────────────────────────┘ Hello, welcome to [32mgashIP[0m.└───────────────────────────────────┐
+echo      │      Enter the name of the TXT file with the desired IPs with its extension in the directory.          │
+echo      │       If said TXT is not in this directory, make sure to drag the .txt file in to [32mgashIP[0m.              │
+echo      └───────────────────────────┐If assistance is needed, type in the command, "HELP"┌───────────────────────┘
+echo                                  └────────────────────────────────────────────────────┘
+echo.
+echo.
+set /p ipFile= "Enter the name of the text file >> "
 
 :: Handle HELP command
 if /i "%ipFile%"=="HELP" (
     cls
     echo. 
-	echo     HELP - How to use [32mgashIP[0m:
-    echo  _______________________________________________________________________________________
+    echo ┌───────────────────────────────────────────────────────────────────────────────────────┐
+	echo │                     HELP - How to use [32mgashIP[0m:             		                │
+	echo │                                                                                       │  
     echo │1 -  Type the name of the TXT file with the IPs.                                       │
     echo │2 - [32mgashIP[0m will gather the geolocation information for each IP entered.                │
     echo │3 - The information of the IPs when finished will be located in the following folders: │
     echo │  - Raw JSON responses: output\json_results                                            │   
     echo │  - Extracted geolocation information: output\geolocation_results                      │
-    echo │______________________________________COMMANDS_________________________________________│
+    echo │───────────────────────────────────────────────────────────────────────────────────────│
+    echo │                                     COMMANDS:                                         │      
+    echo │                                                                                       │  	
     echo │1 - Write the command "LOG" to see information on your previously scanned IPs.         │
     echo │2 - Type the command "HELP" to have a guide on how to use [32mgashIP[0m.                      │   
 	echo │3 - Type the command "MEDIA" to see my social media profiles.                          │
     echo │4 - Type the command "EXIT" to leave [32mgashIP[0m.                                           │
-    echo │_______________________________________________________________________________________│
+    echo └───────────────────────────────────────────────────────────────────────────────────────┘
     pause
     goto INPUT
 )
@@ -66,7 +72,7 @@ if /i "%ipFile%"=="LOG" (
 
 :: Handle EXIT command
 if /i "%ipFile%"=="exit" (
-    echo Exiting the gashIP. See you later!
+    echo Closing gashIP, Goodbye!
     exit /b
 )
 
@@ -75,21 +81,23 @@ if /i "%ipFile%"=="MEDIA" (
 	cls
 	echo.
 	echo.
-	echo  Social-Media Profiles:
-	echo  ________________________________
-	echo │ Biolink: Guns.lol/_            │
-	echo │ Discord: @2elk                 │
-	echo │ Roblox: @Onal                  │
-	echo │ rest of my stuff is in my guns │
-	echo │ join /xzc and /diddy btw       │
-	echo │________________________________│
+	echo		 ┌───────────────────────────────────────┐
+	echo		 │         Social-Media Profiles:        │
+	echo		 │                                       │
+	echo		 │ Biolink: Guns.lol/_                   │
+	echo		 │ Discord: @2elk                        │
+	echo		 │ GitHub: @3elk                         │
+	echo		 │ Roblox: @Onal                         │
+	echo		 │ rest of my stuff is in my guns.lol    │
+	echo		 │ join /xzc and /diddy                  │
+	echo		 └───────────────────────────────────────┘
 	pause
 	goto INPUT
 )
 	
 :: Check if the file exists
 if not exist "%ipFile%" (
-    echo The file "%ipFile%" does not exist. Please provide a valid file with its extension or specify its full path.
+    echo The file "%ipFile%" does not exist. Please provide a valid file. (WITH ITS EXTENSION)
     echo.
     pause
     goto INPUT
@@ -109,7 +117,7 @@ for /f "tokens=*" %%i in (%ipFile%) do (
 
     :: Check if the JSON file was created successfully
     if not exist "output\json_results\!ip!.json" (
-        echo Failed to fetch data for IP: !ip!
+        echo Failed to fetch data for the IP: !ip!
         echo --------------------------
         continue
     )
@@ -153,7 +161,8 @@ echo [32m                      __    ________ [0m
 echo [32m    ____ _____ ______/ /_  /  _/ __ \[0m
 echo [32m   / __ `/ __ `/ ___/ __ \ / // /_/ /[0m
 echo [32m  / /_/ / /_/ (__  ) / / // // ____/ [0m
-echo [32m  \__, /\__,_/____/_/ /_/___/_/   (_) [0m
+echo [32m  \__, /\__,_/____/_/ /_/___/_/   (_)[0m
 echo [32m /____/                              [0m
+echo [32m                   b y  e l k        [0m
 echo.
 echo.
