@@ -12,15 +12,16 @@ gashIP is a .bat script that geolocates any IP given in seconds without any exte
 
 ## How To Use!
 
-1) Make a .txt file containing the IP you would like to geolocate (Specify what type of file it is!)
+1. Make a .txt file containing the IP you would like to geolocate
+
+2. Type in the file name inside of gashIP (Specify what type of file it is!)
 
 (WAIT FOR IT TO FINISH)
 
-2) Check the newly created folder named "output" to see the results
-
+3. Check the newly created folder named "output" to see the results
 (For the raw JSON Responses, goto the output folder "json_results". And for the geolocation info, go to the output folder "geolocation_results")
 
-3) Just one more thing, DO NOT USE THIS TOOL WITH MALICIOUS INTENT!
+4) Just one more thing, DO NOT USE THIS TOOL WITH MALICIOUS INTENT!
 
 
 ## LEGAL NOTICE:
