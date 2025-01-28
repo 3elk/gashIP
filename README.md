@@ -19,6 +19,9 @@ gashIP is a .bat script that geolocates any IP given in seconds without any exte
 (WAIT FOR IT TO FINISH)
 
 3. Check the newly created folder named "output" to see the results
+
+\
+
 (For the raw JSON Responses, goto the output folder "json_results". And for the geolocation info, go to the output folder "geolocation_results")
 
 4) Just one more thing, DO NOT USE THIS TOOL WITH MALICIOUS INTENT!
