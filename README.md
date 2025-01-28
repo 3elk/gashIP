@@ -1,5 +1,6 @@
-## gashIP is a .bat script that geolocates any IP given in seconds without any external apps necessary!
-Commands:
+gashIP is a .bat script that geolocates any IP given in seconds without any external apps necessary!
+
+## Commands:
 
    -Use the command "HELP" for a instructions.
 
@@ -8,6 +9,12 @@ Commands:
    -Use the command "EXIT" to leave gashIP.
 
 ## How To Use!
+
+1) Make a .txt file containing the IP you would like to geolocate (Specify what type of file it is!)
+
+(WAIT FOR IT TO FINISH)
+
+2) Check the newly created folder named "output" to see the results
 
 ## LEGAL NOTICE:
 
