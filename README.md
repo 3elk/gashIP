@@ -31,4 +31,4 @@ You will not use the geolocation data to engage in any activity that could be co
 
 =======================================================
 
-PS: This is just a small little tool I made in about 2 days, don't expect this to be perfect, I just wanted to make something for me to use personally.
+PS: This is a beginner project I made in about 4 days, THIS IS NOT PERFECT! if there are any flaws found, LET ME KNOW!
