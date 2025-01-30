@@ -38,3 +38,5 @@ You will not use the geolocation data to engage in any activity that could be co
 =======================================================
 
 PS: This is a beginner project I made in about 4 days, THIS IS NOT PERFECT! if there are any flaws found, LET ME KNOW!
+
+Also, if there are any issues in the .BAT version, try the .EXE version!
