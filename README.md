@@ -1,4 +1,4 @@
-gashIP is a .bat script that geolocates any IP given in seconds without any external apps necessary!
+gashIP is an Open-Source Batchile script that geolocates any IP given in seconds without any external apps necessary!
 
 
 ## Commands:
