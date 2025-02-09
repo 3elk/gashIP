@@ -1,5 +1,7 @@
 ## 🖥️ gashIP
 
+![Image Alt](https://github.com/3elk/gashIP/blob/aea2ebd1b119ccc48b1682f070fcbaf50cbe2a79/media/Screenshot%202025-02-09%20020939.png)
+
 gashIP is an Open-Source Batchile script that geolocates any IP given in seconds without any external apps necessary!
 
 
