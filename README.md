@@ -1,7 +1,7 @@
 gashIP is an Open-Source Batchile script that geolocates any IP given in seconds without any external apps necessary!
 
 
-## Commands:
+## 📋 Commands:
 
    -Use the command "HELP" for a instructions.
 
@@ -10,7 +10,7 @@ gashIP is an Open-Source Batchile script that geolocates any IP given in seconds
    -Use the command "EXIT" to leave gashIP.
 
 
-## How To Use!
+## 📄 How To Use!
 
 1. Make a text file containing the IP you would like to geolocate
 
@@ -25,7 +25,7 @@ gashIP is an Open-Source Batchile script that geolocates any IP given in seconds
 4. Just one more thing, DO NOT USE THIS TOOL WITH MALICIOUS INTENT!
 
 
-## LEGAL NOTICE:
+## ⚠️ Legal Notice!
 
 By using this script, you acknowledge that:
 
