@@ -1,16 +1,17 @@
-## 🖥️ gashIP (ARCHIVED)
-
-![Image Alt](https://github.com/3elk/gashIP/blob/aea2ebd1b119ccc48b1682f070fcbaf50cbe2a79/media/Screenshot%202025-02-09%20020939.png)
-
-gashIP is an Open-Source Batchile script that geolocates any IP given in seconds without any external apps necessary!
-
 # ARCHIVED!
 
 This tool has been archived, that means I will no longer be updating this or adding anything new to the script. This will still be downloadable and still be on my profile, so its not going anywhere.
 
 ### Why?
 
-Simply, I am not proud of this tool! I do not want to associate with this tool at all! In a less proper sense, "Fuck this tool".
+Simply, I am not proud of this tool! I do not want to associate with this tool at all! Have fun with this tool if you want to though, Im just not a fan of it.
+
+
+## 🖥️ gashIP (ARCHIVED)
+
+![Image Alt](https://github.com/3elk/gashIP/blob/aea2ebd1b119ccc48b1682f070fcbaf50cbe2a79/media/Screenshot%202025-02-09%20020939.png)
+
+gashIP is an Open-Source Batchile script that geolocates any IP given in seconds without any external apps necessary!
 
 ## 📋 Commands:
 
